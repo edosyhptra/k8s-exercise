@@ -1,0 +1,15 @@
+# gcloud container clusters get-credentials onxp-bootcamp-cluster  --region=us-central1-a
+# kubectl -n exercise apply -f pod.yaml
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: geobeefront
+  labels:
+    app: geobeefront
+spec:
+  containers:
+    - name: geobeefront
+      image: edosyhtptra/geobeefront:v1.2
+      ports:
+        - containerPort: 3000

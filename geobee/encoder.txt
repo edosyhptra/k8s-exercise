@@ -1,0 +1,2 @@
+echo -n 'postgres' | base64
+echo -n 'edo' | base64
